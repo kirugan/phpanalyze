@@ -1,8 +1,14 @@
 {
+    "autoload": {
+        "psr-4": {
+            "PHPFixer\\": "src/"
+        }
+    },
     "require": {
         "nikic/php-parser": "^4.2",
         "symfony/finder": "^4.3",
         "phploc/phploc": "^4.0",
-        "ircmaxell/php-cfg": "^0.5.0"
+        "ircmaxell/php-cfg": "^0.5.0",
+        "phpunit/phpunit": "7.5.14"
     }
 }
