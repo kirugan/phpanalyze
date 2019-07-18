@@ -30,6 +30,11 @@ class RemoveSuperglobals
         $this->nodeFinder = new NodeFinder();
     }
 
+    public function needToFix(): bool
+    {
+        return count($this->varsToFix) > 0;
+    }
+
     public function prepare($node)
     {
         if (!($node instanceof Function_) && !($node instanceof ClassMethod)) {
